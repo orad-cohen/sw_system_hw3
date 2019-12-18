@@ -11,12 +11,12 @@ isort: isort.c
 	$(CC) $(FLAGS)  isort.c -o isort
 
 
-txtfind: txtfile.c
-	$(CC) $(FLAGS) txtfile.c -o txtfind	
+txtfind: txtfind.c
+	$(CC) $(FLAGS) txtfind.c -o txtfind	
 
 
 .PHONY:all clean
 
 clean:
-	rm *.o isort txtfind
+	rm isort txtfind
 

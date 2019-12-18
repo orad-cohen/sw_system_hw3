@@ -4,16 +4,19 @@ OBJECTS_MAIN=isort.o
 FLAGS= -Wall -g
 
 
-all:isort
+all:isort txtfind
 
 
-isort: isort.o
+isort: isort.c
 	$(CC) $(FLAGS)  isort.c -o isort
 
+
+txtfind: txtfile.c
+	$(CC) $(FLAGS) txtfile.c -o txtfind	
 
 
 .PHONY:all clean
 
 clean:
-	rm *.o isort
+	rm *.o isort txtfind
 

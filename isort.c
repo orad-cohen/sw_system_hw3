@@ -15,7 +15,12 @@ int main(){
         c--;        
     }
 
-    insertion_sort(arr , 50); 
+    insertion_sort(arr , 50);
+    int c =0;
+    while(c-50){
+        printf("%d,",arr[c]);
+        c++;
+    }
      
 
 
@@ -43,19 +48,5 @@ void insertion_sort(int* arr , int len){
         }
         shift_element((arr+j),i-j);
         *(arr+j)=key;
-        int c =0;
-        while(c-len){
-        printf("%d,",arr[c]);
-        c++;
-    }
-    printf("i = %d \n",i);
-    
-
-
-
-    }
-
-
-
-
+        }
 }

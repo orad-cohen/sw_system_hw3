@@ -15,10 +15,11 @@ int main(){
     
     insertion_sort(p , 50);
     c =0;
-    while(c-50){
+    while(c<49){
         printf("%d,",arr[c]);
         c++;
     }
+    printf("%d",arr[c]);
      
 
 

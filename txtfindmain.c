@@ -17,7 +17,7 @@ int main(){
         while((getword(curWord))){          
              
             if(similar(curWord,word,1)){
-                printf("\n%s",curWord);               
+                printf("%s\n",curWord);               
                 
             }
         }
@@ -29,7 +29,7 @@ int main(){
             
             
             if(substring(line,word)){
-                printf("\n%s",line);
+                printf("%s\n",line);
             }
         }       
 

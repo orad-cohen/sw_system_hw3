@@ -1,54 +1,5 @@
 #include<stdio.h>
-#include<string.h>
-#define WORD 30
-#define LINE 256
-int getword(char w[]);
-int substring( char * str1, char * str2);
-int substring( char * str1, char * str2);
-int getLine(char s[]);
-int similar (char *s, char *t, int n);
-void printWord(char * str);
-
-int main(){
-    char word[WORD]={0};
-    char curWord[WORD]={0};    
-    char line[LINE]={0};
-    char c[1];
-    getword(word);
-    getword(c);
-    getchar();
-    
-    if(c[0] == 'a'){
-        
-        while((getword(curWord))){            
-            
-            if(similar(curWord,word,1)){
-                printf("%s\n",curWord);               
-                
-            }
-        }
-
-    }
-    else if(c[0]=='b'){
-        while (getLine(line))
-        {
-            
-            
-            if(substring(line,word)){
-                printf("%s\n",line);
-            }
-        }       
-
-    }
-    else{
-        printf("Error: Input.");
-    }  
-    
-
-    
-
-
-}
+#include"txtfind.h"
 
 int getLine(char s[]){
     int i = 0;
@@ -66,7 +17,6 @@ int getLine(char s[]){
 int getword(char w[]){
     int i = 0;
     char c;
-
     while (((c=getchar())!='\n')&&(c!='\t')&&(c!=EOF&&c!=' ')){
         *(w+i)=c;
         i++;

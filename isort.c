@@ -1,31 +1,5 @@
 #include<stdio.h>
-#include<stdlib.h>
-#define LEN 50
-
-void insertion_sort(int* arr , int len);
-
-
-int main(){
-    int arr[LEN];
-    int c = LEN;   
-  
-    while (c)
-    {
-        scanf("%d",(arr-c+50));
-        c--;        
-    }
-
-    insertion_sort(arr , 50);
-    c =0;
-    while(c-50){
-        printf("%d,",arr[c]);
-        c++;
-    }
-     
-
-
-
-}
+#include"isort.h"
 
 void shift_element(int* arr, int i){
     while (i>=0){

@@ -15,11 +15,11 @@ int main(){
     scanf(" ");
     
     
-    if(c == 'a'){    
+    if(c == 'b'){    
         printWord(word);        
 
     }
-    else if(c=='b'){
+    else if(c=='a'){
         print_lines(word);         
 
     }

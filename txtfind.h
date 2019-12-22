@@ -4,3 +4,4 @@ int substring( char * str1, char * str2);
 int getLine(char s[]);
 int similar (char *s, char *t, int n);
 void printWord(char * str);
+void print_lines(char * str);
